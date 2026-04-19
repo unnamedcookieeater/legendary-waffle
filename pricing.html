@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Plans | Nexus AI</title>
+    <title>Тарифные планы | Nexus AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,40 +11,78 @@
         <a href="index.html" class="logo">Nexus AI</a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="product.html">Продукты</a></li>
+                <li><a href="pricing.html">Тарифы</a></li>
+                <li><a href="team.html">Команда</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>API Pricing</h2>
+        <div style="text-align: center;">
+            <h1>Прозрачные цены. Никаких скрытых платежей.</h1>
+            <p class="subtitle">Платите только за то, что реально используете. Вы можете изменить свой тарифный план или отменить подписку в любой момент через личный кабинет.</p>
+        </div>
+
         <div class="grid-container">
             <div class="card">
-                <h3>Starter</h3>
-                <div class="price-tag">Free</div>
-                <p>Basic access for testing and personal projects.</p>
-                <p>1,000 requests / month</p>
-            </article>
-            <div class="card" style="border-color: var(--accent-color);">
-                <h3>Developer Pro</h3>
-                <div class="price-tag">$49 / mo</div>
-                <p>Full API suite for production-ready applications.</p>
-                <p>100,000 requests / month</p>
+                <h3>План "Starter"</h3>
+                <div class="price-tag">Бесплатно</div>
+                <p>Идеально для студентов, тестирования гипотез и участия в хакатонах.</p>
+                <ul>
+                    <li>До 10,000 API запросов в месяц</li>
+                    <li>Доступ к базовым NLP и Vision моделям</li>
+                    <li>Лимит: 2 запроса в секунду</li>
+                    <li>Поддержка в Discord сообществе</li>
+                </ul>
+                <a href="#" class="btn btn-outline" style="text-align: center; margin-top: auto;">Начать бесплатно</a>
             </div>
+            
+            <div class="card" style="border-color: var(--accent-color); transform: scale(1.05); z-index: 10;">
+                <h3 style="color: #ffffff;">План "Developer Pro"</h3>
+                <div class="price-tag">$49 <span style="font-size: 20px; color:#8b949e;">/ мес</span></div>
+                <p>Выбор профессионалов. Полный доступ ко всем мощностям системы.</p>
+                <ul>
+                    <li>До 500,000 API запросов в месяц</li>
+                    <li>Доступ к Predictive Analytics</li>
+                    <li>Лимит: 50 запросов в секунду</li>
+                    <li>Приоритетная Email поддержка (ответ до 2 часов)</li>
+                </ul>
+                <a href="#" class="btn" style="text-align: center; margin-top: auto;">Оформить подписку</a>
+            </div>
+            
             <div class="card">
-                <h3>Enterprise</h3>
+                <h3>План "Enterprise"</h3>
                 <div class="price-tag">Custom</div>
-                <p>Scalable infrastructure with 24/7 priority support.</p>
-                <p>Unlimited requests</p>
+                <p>Для корпораций и высоконагруженных глобальных проектов.</p>
+                <ul>
+                    <li>Безлимитные запросы</li>
+                    <li>Развертывание моделей на ваших серверах</li>
+                    <li>Индивидуальная дообучение ИИ</li>
+                    <li>Персональный менеджер 24/7</li>
+                </ul>
+                <a href="#" class="btn btn-outline" style="text-align: center; margin-top: auto;">Связаться с отделом продаж</a>
             </div>
+        </div>
+
+        <h2 style="margin-top: 80px;">Часто задаваемые вопросы</h2>
+        <div class="faq-box">
+            <h3 style="color: #fff; font-size: 20px;">Что произойдет, если я превышу лимит запросов?</h3>
+            <p>Мы не будем блокировать ваш проект сразу. Вы получите уведомление на почту, а дополнительные запросы будут тарифицироваться по ставке $0.001 за каждый вызов API.</p>
+        </div>
+        <div class="faq-box">
+            <h3 style="color: #fff; font-size: 20px;">Могу ли я использовать Starter план в коммерческих целях?</h3>
+            <p>Да, абсолютно. Мы поддерживаем независимых разработчиков на ранних этапах. Если ваш стартап начнет расти, вы легко сможете перейти на Pro.</p>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Nexus AI. All rights reserved.</p>
+        <p>&copy; 2026 Nexus AI Ecosystem. Все права защищены.</p>
+        <div class="footer-links">
+            <a href="#">Способы оплаты</a>
+            <a href="#">Возврат средств</a>
+        </div>
     </footer>
 </body>
 </html>
